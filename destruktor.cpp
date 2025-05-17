@@ -11,3 +11,9 @@ public:
     void cetakData();
     void isiData();
 };
+//Definisi member Function
+angka::angka(int i){
+    panjang = i;
+    arr = new int[i];
+    isiData();
+}
