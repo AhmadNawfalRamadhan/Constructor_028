@@ -12,13 +12,13 @@ public:
     void isiData();
 };
 //Definisi member Function
-angka::angka(int i){
+angka::angka(int i){ //Constructor
     panjang = i;
     arr = new int[i];
     isiData();
 }
 
-angka::~angka(){
+angka::~angka(){ //Destruktor
     cout<<endl;
     cetakData();
     delete[]arr;
@@ -33,9 +33,10 @@ void angka::isiData(){
 }
 
 int main(){
-    angka belajarcpp(3);
-    angka *ptrBelajarcpp = new angka(5);
-    delete ptrBelajarcpp;
+    angka belajarcpp(3); //Constructor Dipanggil
+    angka *ptrBelajarcpp = new angka(5); //constructor Dipanggil
+    delete ptrBelajarcpp; //Destructor dipanggil
 
     return 0;
-}
+}//Destructor Dpanggil
+
